@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+[class*="square-"] {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  background-color: gray;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  border: 2px solid black;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: black;
+}
+
+/* square-one */
+
+.square-one {
+  justify-content: center;
+  align-items: center;
+}
+
+/* square-two */
+
+.square-two {
+  justify-content: space-between;
+}
+
+.square-two .circle:last-child {
+  align-self: flex-end;
+}
+
+/* square-three */
+
+.square-three {
+  justify-content: space-between;
+}
+
+.square-three .circle:nth-child(2) {
+  align-self: center;
+}
+
+.square-three .circle:nth-child(3) {
+  align-self: flex-end;
+}
+
+/* container for four, five, six square */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* square-four, square-six  */
+
+.square-four,
+.square-five,
+.square-six {
+  justify-content: space-between;
+}
+
+/* square-five */
+.five-two .circle {
+  align-self: center;
+}
